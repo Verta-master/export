@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <ul class="header__menu">
+          <li><a href="#" class="header__link">Компания</a></li>
+          <li><a href="#" class="header__link">Каталог</a></li>
+          <li><a href="#" class="header__link">Услуги</a></li>
+          <li><a href="#" class="header__link">Акции</a></li>
+          <li><a href="#" class="header__link">Новости</a></li>
+          <li><a href="#" class="header__link">Контакты</a></li>
+          <li><a href="#" class="header__link">Сертификаты</a></li>
+        </ul>
+        <div class="header__login">
+          <a href="#" class="header__link">Вход</a>
+          <a href="#" class="header__link">Регистрация</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__middle wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" width="250" height="96">
+      </div>
+      <form action="#" class="search">
+        <input type="text" name="search" class="search__input" placeholder="Поиск">
+        <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+      </form>
+      <div class="header__phones">
+        <a href="Tel:+78122456658">+7 (812) 245-66-58</a>
+        <a href="Tel:+77776794412">+7 (777) 679-44-12</a>
+        <a href="#" class="link">Заказать звонок</a>
+      </div>
+      <div class="header__user">
+        <a href="#" class="header__compare" title="Список сравнения"></a>
+        <a href="#" class="header__like" title="Отложенные товары"></a>
+        <a href="#" class="header__cart" title="Корзина"><span></span></a>
+      </div>
+    </div>
+    <nav class="menu">
+      <button type="button" class="menu__btn">Меню</button>
+      <ul class="wrapper menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">МЕДИЦИНСКОЕ ОБОРУДОВАНИЕ</a>
+          <button type="button" class="menu__subbtn"><span class="visually-hidden">Подменю</span></button>
+          <ul class="menu__subitem">
+            <li class="menu__subitem"><a href="#">Медицинские разделительные трансформаторы</a></li>
+            <li class="menu__subitem"><a href="#">Медицинские электрощитки ЭЩР</a></li>
+            <li class="menu__subitem"><a href="#">Сейфы-холодильники</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">МЕТАЛЛОРЕЖУЩИЕ СТАНКИ</a>
+          <button type="button" class="menu__subbtn"><span class="visually-hidden">Подменю</span></button>
+          <ul class="menu__subitem">
+            <li class="menu__subitem"><a href="#">Гибочные станки</a></li>
+            <li class="menu__subitem"><a href="#">Отрезные станки по металлу</a></li>
+            <li class="menu__subitem"><a href="#">Сверлильные станки</a></li>
+            <li class="menu__subitem"><a href="#">Токарные станки по металлу</a></li>
+            <li class="menu__subitem"><a href="#">Фрезерные станки по металлу</a></li>
+            <li class="menu__subitem"><a href="#">Шлифовальные станки по металлу</a></li>
+            <button type="button" class="menu__more">Еще</button>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">АВТОСЕРВИСНОЕ ОБОРУДОВАНИЕ</a>
+          <button type="button" class="menu__subbtn"><span class="visually-hidden">Подменю</span></button>
+          <ul class="menu__subitem">
+            <li class="menu__subitem"><a href="#">Стенды для испытания и регулировки ТНВД</a></li>
+            <li class="menu__subitem"><a href="#">Стенды для испытания и регулировки форсунок</a></li>
+            <li class="menu__subitem"><a href="#">Стенды для обкатки двигателей</a></li>
+            <li class="menu__subitem"><a href="#">Стенды для разборки и сборки двигателей</a></li>
+            <button type="button" class="menu__more">Еще</button>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Еще</a>
+          <ul class="menu__subitem menu__subitem--more">
+            <li class="menu__column">
+              <a href="#" class="menu__title">Смазочное и маслораздаточное оборудование</a>
+              <a href="#" class="menu__sublink">Ёмкости, резервуары для масла</a>
+              <a href="#" class="menu__sublink">Системы раздачи масла</a>
+            </li>
+            <li class="menu__column">
+              <a href="#" class="menu__title">Деревообрабатывающие станки</a>
+              <a href="#" class="menu__sublink">Комбинированные деревообрабатывающие станки</a>
+              <a href="#" class="menu__sublink">Ленточные пилы по дереву</a>
+              <a href="#" class="menu__sublink">Рейсмусовые станки</a>
+              <button type="button" class="menu__sublink menu__sublink--more">Еще</button>
+              <div class="menu__hide">
+                <a href="#" class="menu__sublink">Строгальные и фуговальные станки</a>
+                <a href="#" class="menu__sublink">Стужкоотсосы</a>
+                <a href="#" class="menu__sublink">Токарные станки по дереву</a>
+                <a href="#" class="menu__sublink">Форматно-раскроечные станки</a>
+                <a href="#" class="menu__sublink">Фрезерные станки по дереву</a>
+                <a href="#" class="menu__sublink">Циркулярные пилы</a>
+              </div>
+            </li>
+            <li class="menu__column">
+              <a href="#" class="menu__title">Оборудование для прачечных и химчисток</a>
+              <a href="#" class="menu__sublink">Гладильное оборудование</a>
+              <a href="#" class="menu__sublink">Машины сухой химической чистки</a>
+              <a href="#" class="menu__sublink">Оборудование для мини-прачечных</a>
+              <button type="button" class="menu__sublink menu__sublink--more">Еще</button>
+              <div class="menu__hide">
+                <a href="#" class="menu__sublink">Стиральные машины</a>
+                <a href="#" class="menu__sublink">Сушильные машины</a>
+                <a href="#" class="menu__sublink">Центрифуги для отжима белья</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!--  Slider  -->
+    <div class="swiper-container slider">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide slider__item">
+          <a href="#">
+            <img class="slider__bg" src="img/slider-1.jpg" alt="ПСК ЭКСПОРТ + РоспромKZ" width="980" height="358">
+            <div class="slider__info">
+              <p class="slider__title">ПСК ЭКСПОРТ + РоспромKZ</p>
+              <p class="slider__text">Комплексные поставки промышленного оборудования по России и СНГ.</p>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide slider__item">
+          <a href="#">
+            <img class="slider__bg" src="img/slider-2.jpg" alt="Смазочное и маслораздаточное оборудование" width="980" height="358">
+            <div class="slider__info">
+              <p class="slider__title">Смазочное и маслораздаточное оборудование</p>
+              <p class="slider__comment">На сайте размещен новый раздел со смазочным и маслораздаточным оборудованием.</p>
+            </div>
+            <img class="slider__img" src="img/slider-3.jpg" alt="Смазочное и маслораздаточное оборудование" width="400" height="400">
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev slider__prev"></div>
+      <div class="swiper-button-next slider__next"></div>
+    </div>
+    
+    <!--  Images block  -->
+    <section class="category wrapper">
+      <ul class="category__list">
+        <li class="category__item">
+          <a href="#">
+            <img src="img/img-1.jpg" alt="Смазочное и маслораздаточное оборудование" width="400" height="400">
+            <p>Смазочное и маслораздаточное оборудование</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#">
+            <img src="img/img-2.jpg" alt="Оборудование для прачечных и химчисток" width="543" height="427">
+            <p>Оборудование для прачечных и химчисток</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#">
+            <img src="img/img-3.jpg" alt="Медицинское оборудование" width="744" height="478">
+            <p>Медицинское оборудование</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#">
+            <img src="img/img-4.jpg" alt="Автосервисное оборудование" width="1172" height="1298">
+            <p>Автосервисное оборудование</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#">
+            <img src="img/img-5.jpg" alt="Деревообрабатывающие станки" width="170" height="170">
+            <p>Деревообрабатывающие станки</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#">
+            <img src="img/img-6.jpg" alt="Металлорежущие станки" width="170" height="170">
+            <p>Металлорежущие станки</p>
+          </a>
+        </li>
+      </ul>
+      
+      <ul class="category__benefits">
+        <li class="category__info">
+          <img src="img/icon-1.png" alt="Качественные услуги и сервис" width="64" height="64">
+          <p>Качественные услуги и сервис</p>
+        </li>
+        <li class="category__info">
+          <img src="img/icon-2.png" alt="Акции и скидки для клиентов" width="64" height="64">
+          <p>Акции и скидки для клиентов</p>
+        </li>
+        <li class="category__info">
+          <img src="img/icon-3.png" alt="Быстрая доставка в срок" width="64" height="64">
+          <p>Быстрая доставка в срок</p>
+        </li>
+      </ul>
+    </section>
+    
+    <!--  Tabs  -->
+    <section class="tabs wrapper" id="tabs">
+      <ul class="tabs__title">
+        <li class="tabs__name"><a href="#tabs-1">Хиты продаж</a></li>
+        <li class="tabs__name"><a href="#tabs-2">Новинки</a></li>
+        <li class="tabs__name"><a href="#tabs-3">Советуем</a></li>
+      </ul>
+      <div class="tabs__field" id="tabs-1">
+        <ul class="catalog">
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--hit">Хит</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-2.jpg" alt="Листогибочные вальц" width="300" height="300">
+            </a>
+            <p class="catalog__title"><a href="#">Листогибочные вальцы PSBM - 2050 - 2</a></p>
+            <a href="#" class="catalog__category">Листогибочные вальцы</a>
+            <p class="catalog__price">598 912 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--hit">Хит</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-1.jpg" alt="Комбинированные деревообрабатывающие станки" width="300" height="193">
+            </a>
+            <p class="catalog__title"><a href="#">Комбинированный деревообрабатывающий станок CWM-250-5</a></p>
+            <a href="#" class="catalog__category">Комбинированные деревообрабатывающие станки</a>
+            <p class="catalog__price">180 900 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--advice">Советуем</span>
+            <span class="catalog__label catalog__label--new">Новинка</span>
+            <span class="catalog__label catalog__label--hit">Хит</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-4.jpg" alt="Токарно-винторезные станки" width="300" height="170">
+            </a>
+            <p class="catalog__title"><a href="#">Токарно-винторезный станок PROMA SPI-2000</a></p>
+            <a href="#" class="catalog__category">Токарно-винторезные станки</a>
+            <p class="catalog__price">1 860 000 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--hit">Хит</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-3.jpg" alt="Строгальные и фуговальные станки" width="300" height="201">
+            </a>
+            <p class="catalog__title"><a href="#">Фуговально-рейсмусовый станок HP-410B</a></p>
+            <a href="#" class="catalog__category">Строгальные и фуговальные станки</a>
+            <p class="catalog__price">246 000 руб.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tabs__field" id="tabs-2">
+        <ul class="catalog">
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--new">Новинка</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-5.jpg" alt="Ленточные пилы по дереву" width="300" height="93">
+            </a>
+            <p class="catalog__title"><a href="#">Ленточная пила по дереву PP-500</a></p>
+            <a href="#" class="catalog__category">Ленточные пилы по дереву</a>
+            <p class="catalog__price">126 000 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--new">Новинка</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-6.jpg" alt="Профилегибочные и трубогибочные станки" width="300" height="300">
+            </a>
+            <p class="catalog__title"><a href="#">Ручной профилегибочный станок UO-30</a></p>
+            <a href="#" class="catalog__category">Профилегибочные и трубогибочные станки</a>
+            <p class="catalog__price">21 000 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--new">Новинка</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-7.jpg" alt="Стужкоотсосы" width="300" height="300">
+            </a>
+            <p class="catalog__title"><a href="#">Стужкоотсосы</a></p>
+            <a href="#" class="catalog__category">Стужкоотсосы</a>
+            <p class="catalog__price">13 200 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--new">Новинка</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-8.jpg" alt="Автоматические самоочищающиеся ситовые фильтры" width="290" height="290">
+            </a>
+            <p class="catalog__title"><a href="#">Автоматические гидравлические фильтры</a></p>
+            <a href="#" class="catalog__category">Автоматические самоочищающиеся ситовые фильтры</a>
+            <p class="catalog__price">13 200 руб.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tabs__field" id="tabs-3">
+        <ul class="catalog">
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--advice">Советуем</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-5.jpg" alt="Ленточные пилы по дереву" width="300" height="93">
+            </a>
+            <p class="catalog__title"><a href="#">Ленточная пила по дереву PP-500</a></p>
+            <a href="#" class="catalog__category">Ленточные пилы по дереву</a>
+            <p class="catalog__price">126 000 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--advice">Советуем</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-6.jpg" alt="Профилегибочные и трубогибочные станки" width="300" height="300">
+            </a>
+            <p class="catalog__title"><a href="#">Ручной профилегибочный станок UO-30</a></p>
+            <a href="#" class="catalog__category">Профилегибочные и трубогибочные станки</a>
+            <p class="catalog__price">21 000 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--advice">Советуем</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-7.jpg" alt="Стужкоотсосы" width="300" height="300">
+            </a>
+            <p class="catalog__title"><a href="#">Стужкоотсосы</a></p>
+            <a href="#" class="catalog__category">Стужкоотсосы</a>
+            <p class="catalog__price">13 200 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <span class="catalog__label catalog__label--advice">Советуем</span>
+            <a href="#" class="catalog__img">
+              <img src="img/catalog-8.jpg" alt="Автоматические самоочищающиеся ситовые фильтры" width="290" height="290">
+            </a>
+            <p class="catalog__title"><a href="#">Автоматические гидравлические фильтры</a></p>
+            <a href="#" class="catalog__category">Автоматические самоочищающиеся ситовые фильтры</a>
+            <p class="catalog__price">13 200 руб.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!--  Services block  -->
+    <section class="service">
+      <div class="wrapper">
+        <p class="title">Услуги</p>
+        <ul class="service__list">
+          <li class="service__item">
+            <a href="#">Выезд специалиста</a>
+            <p>Для обучения персонала работы на оборудовании производства ООО "КРОН" возможен выезд специали...</p>
+          </li>
+          <li class="service__item">
+            <a href="#">Обучение</a>
+            <p>При наборе группы, проводится обучение по специальности «Слесарь по ремонту топливной аппаратуры».</p>
+          </li>
+          <li class="service__item">
+            <a href="#">Пуско-налодочные работы</a>
+            <p>При желании Заказчика производим пуско-наладочные работы поставленного оборудования.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!--  Info and news  -->
+    <section class="about wrapper">
+      <div class="about__company">
+        <p class="title">О компании</p>
+        <img src="img/about_company.png" alt="О компании" width="182" height="226">
+        <p>Основным направлением деятельности компании является поставка промышленного оборудования. Мы внимательно относимся к каждому клиенту и пытаемся найти решение для любого заказчика. Коллектив ООО "ПСК-Экспорт" нацелен на максимальную отдачу при работе с клиентом. ТОО "РоспромKZ" по прежнему работает как отдельное юридическое лицо на территории Республики Казахстан, но уже как представительство ООО "ПСК-Экспорт".</p>
+      </div>
+      <div class="news">
+        <p class="title">Новости</p>
+        <a href="#" class="link">Все новости</a>
+        <ul class="news__list">
+          <li class="news__item">
+            <a href="#" class="news__img">
+              <img src="img/news-1.jpg" alt="Поставка оборудования для пограничной заставы" width="100" height="100">
+            </a>
+            <time>10 Июл 2017</time>
+            <a href="#">Поставка оборудования для пограничной заставы</a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__img">
+              <img src="img/news-2.jpg" alt="Поставка оборудования золотодобывающей компании" width="100" height="100">
+            </a>
+            <time>5 Июн 2017</time>
+            <a href="#">Поставка оборудования золотодобывающей компании ТОО «RG Gold»</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!--  Brand slider  -->
+    <div class="swiper-container brand">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide brand__slide">
+          <a href="#">Flexbimec</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Вмз</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Meclube</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Tuthill Fill-Rite</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Benza</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Gespasa</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Groz</a>
+        </li>
+        <li class="swiper-slide brand__slide">
+          <a href="#">Adam Pumps</a>
+        </li>
+      </ul>
+      <div class="swiper-button-prev brand__prev"></div>
+      <div class="swiper-button-next brand__next"></div>
+    </div>
+  </main>
+  
+  <footer class="footer wrapper">
+    <div class="footer__wrap">
+      <form action="#" class="subscribe">
+        <p class="subscribe__title">ПОДПИШИСЬ НА РАССЫЛКУ НОВОСТЕЙ И АКЦИЙ</p>
+        <input type="text" name="subscribe" class="subscribe__input" placeholder="Введите ваш e-mail">
+        <button type="submit" class="subscribe__btn">Подписаться</button>
+      </form>
+      <div class="footer__phones">
+        <a href="Tel:+78122456658">+7 (812) 245-66-58</a>
+        <a href="Tel:+77776794412">+7 (777) 679-44-12</a>
+      </div>
+      <a href="#" class="link">Заказать звонок</a>
+    </div>
+    <div class="footer__wrap">
+      <div class="footer__info">
+        <a href="mailto:info@e-psk.com" class="link">info@e-psk.com</a>
+        <p>г. Санкт-Петербург, пр. Тореза, д. 68, лит. Д, оф. 406</p>
+        <p>2017 © - поставки промышленного оборудования по России и СНГ.</p>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__title"><a href="#">Компания</a></li>
+        <li class="footer__item"><a href="#">Новости</a></li>
+        <li class="footer__item"><a href="#">Вакансии</a></li>
+        <li class="footer__item"><a href="#">Сертификаты</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__title"><a href="#">Покупки</a></li>
+        <li class="footer__item"><a href="#">Оплата и доставка</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__title"><a href="#">Помощь</a></li>
+        <li class="footer__item"><a href="#">Покупки</a></li>
+        <li class="footer__item"><a href="#">Статьи</a></li>
+        <li class="footer__item"><a href="#">Вопрос-ответ</a></li>
+        <li class="footer__item"><a href="#">Производители</a></li>
+      </ul>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tw" title="Twitter"></a>
+          </li>
+        </ul>
+        <a href="#" class="link">Поддержка</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>	
+
+<!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.slider', {
+      pagination: {
+        el: '.swiper__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.brand', {
+      navigation: {
+        nextEl: '.brand__next',
+        prevEl: '.brand__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+    });
+  </script>
+</body>
+</html>
