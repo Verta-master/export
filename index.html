@@ -147,7 +147,7 @@
           </a>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination slider__pagination"></div>
       <div class="swiper-button-prev slider__prev"></div>
       <div class="swiper-button-next slider__next"></div>
     </div>
@@ -541,13 +541,14 @@
   <script>
     var mySwiper = new Swiper ('.slider', {
       pagination: {
-        el: '.swiper__pagination',
+        el: '.slider__pagination',
         clickable: true,
       },
       navigation: {
         nextEl: '.slider__next',
         prevEl: '.slider__prev',
       },
+      effect: 'fade',
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
