@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>ПСК Экспорт</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
     <div class="header__top">
-      <div class="wrapper">
+      <div class="wrapper header__wrap">
         <ul class="header__menu">
           <li><a href="#" class="header__link">Компания</a></li>
           <li><a href="#" class="header__link">Каталог</a></li>
@@ -21,7 +22,7 @@
           <li><a href="#" class="header__link">Сертификаты</a></li>
         </ul>
         <div class="header__login">
-          <a href="#" class="header__link">Вход</a>
+          <a data-fancybox data-src="#sign" href="javascript:;" class="header__link">Вход</a>
           <a href="#" class="header__link">Регистрация</a>
         </div>
       </div>
@@ -37,12 +38,12 @@
       <div class="header__phones">
         <a href="Tel:+78122456658">+7 (812) 245-66-58</a>
         <a href="Tel:+77776794412">+7 (777) 679-44-12</a>
-        <a href="#" class="link">Заказать звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="link">Заказать звонок</a>
       </div>
       <div class="header__user">
         <a href="#" class="header__compare" title="Список сравнения"></a>
         <a href="#" class="header__like" title="Отложенные товары"></a>
-        <a href="#" class="header__cart" title="Корзина"><span></span></a>
+        <a href="#" class="header__cart" title="Корзина"><span>0 руб.</span></a>
       </div>
     </div>
     <nav class="menu">
@@ -51,7 +52,7 @@
         <li class="menu__item">
           <a href="#" class="menu__link">МЕДИЦИНСКОЕ ОБОРУДОВАНИЕ</a>
           <button type="button" class="menu__subbtn"><span class="visually-hidden">Подменю</span></button>
-          <ul class="menu__subitem">
+          <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">Медицинские разделительные трансформаторы</a></li>
             <li class="menu__subitem"><a href="#">Медицинские электрощитки ЭЩР</a></li>
             <li class="menu__subitem"><a href="#">Сейфы-холодильники</a></li>
@@ -60,30 +61,30 @@
         <li class="menu__item">
           <a href="#" class="menu__link">МЕТАЛЛОРЕЖУЩИЕ СТАНКИ</a>
           <button type="button" class="menu__subbtn"><span class="visually-hidden">Подменю</span></button>
-          <ul class="menu__subitem">
+          <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">Гибочные станки</a></li>
             <li class="menu__subitem"><a href="#">Отрезные станки по металлу</a></li>
             <li class="menu__subitem"><a href="#">Сверлильные станки</a></li>
             <li class="menu__subitem"><a href="#">Токарные станки по металлу</a></li>
             <li class="menu__subitem"><a href="#">Фрезерные станки по металлу</a></li>
             <li class="menu__subitem"><a href="#">Шлифовальные станки по металлу</a></li>
-            <button type="button" class="menu__more">Еще</button>
+            <li class="menu__subitem"><a href="#">Еще</a></li>
           </ul>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">АВТОСЕРВИСНОЕ ОБОРУДОВАНИЕ</a>
           <button type="button" class="menu__subbtn"><span class="visually-hidden">Подменю</span></button>
-          <ul class="menu__subitem">
+          <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">Стенды для испытания и регулировки ТНВД</a></li>
             <li class="menu__subitem"><a href="#">Стенды для испытания и регулировки форсунок</a></li>
             <li class="menu__subitem"><a href="#">Стенды для обкатки двигателей</a></li>
             <li class="menu__subitem"><a href="#">Стенды для разборки и сборки двигателей</a></li>
-            <button type="button" class="menu__more">Еще</button>
+            <li class="menu__subitem"><a href="#">Еще</a></li>
           </ul>
         </li>
-        <li class="menu__item">
+        <li class="menu__item menu__item--more">
           <a href="#" class="menu__link">Еще</a>
-          <ul class="menu__subitem menu__subitem--more">
+          <ul class="menu__sublist menu__sublist--more">
             <li class="menu__column">
               <a href="#" class="menu__title">Смазочное и маслораздаточное оборудование</a>
               <a href="#" class="menu__sublink">Ёмкости, резервуары для масла</a>
@@ -433,7 +434,7 @@
         <a href="Tel:+78122456658">+7 (812) 245-66-58</a>
         <a href="Tel:+77776794412">+7 (777) 679-44-12</a>
       </div>
-      <a href="#" class="link">Заказать звонок</a>
+      <a data-fancybox data-src="#call" href="javascript:;" class="link">Заказать звонок</a>
     </div>
     <div class="footer__wrap">
       <div class="footer__info">
@@ -474,10 +475,58 @@
       </div>
     </div>
   </footer>
+  <a href="#" class="btn-top" title="Наверх"></a>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="modal__form">
+      <label for="name" class="modal__label">Ваше имя<span>*</span></label>
+      <input type="text" name="name" id="name" class="modal__input" required>
+      <label for="phone" class="modal__label">Ваш телефон<span>*</span></label>
+      <input type="tel" name="phone" id="phone" class="modal__input" required>
+      <input type="checkbox" name="check" class="modal__checkbox" checked>
+      <label for="check" class="modal__check">Я согласен(а) на <a href="#">обработку персональных данных</a></label>
+      <button type="submit" class="btn">Заказать звонок</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="sign" class="modal modal--sign">
+    <form action="#" class="modal__sign">
+      <p class="modal__title">Войти на сайт</p>
+      <label for="name" class="modal__label">Логин:<span>*</span></label>
+      <input type="text" name="name" id="name" class="modal__input" placeholder="e-mail" required>
+      <label for="phone" class="modal__label">Пароль:<span>*</span></label>
+      <input type="tel" name="phone" id="phone" class="modal__input" placeholder="Пароль" required>
+      <input type="checkbox" name="check" class="modal__checkbox" checked>
+      <label for="check" class="modal__check">Запомнить меня</label>
+      <a href="#" class="link">Забыли пароль?</a>
+      <button type="submit" class="btn">Войти</button>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tw" title="Twitter"></a>
+          </li>
+        </ul>
+      </div>
+    </form>
+    <div class="modal__register">
+      <button type="submit" class="btn">Зарегистрироваться</button>
+      <p>После регистрации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности</p>
+    </div>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
 <!-- Tabs -->
   <script>
