@@ -733,3 +733,125 @@ button {
 .menu__hide {
   display: none;
 }
+.modal {
+  max-width: 400px;
+}
+.modal--sign {
+  max-width: 700px;
+}
+.modal--sign .modal__check {
+  float: right;
+}
+.modal .link {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.modal__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #1d1d1d;
+}
+.modal__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+.modal__label span {
+  color: red;
+}
+.modal__input {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 26px;
+  padding: 0 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.modal__checkbox {
+  display: none;
+}
+.modal__check {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.modal__check a {
+  color: #0089e5;
+}
+.modal__check a:hover,
+.modal__check a:active {
+  text-decoration: underline;
+}
+.modal__check::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+}
+.modal__check::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #0089e5;
+}
+.modal__checkbox:checked + .modal__check::after {
+  display: block;
+}
+.modal__sign {
+  width: 400px;
+  padding-right: 37px;
+  border-right: 1px solid #e8e8e8;
+}
+.modal__register {
+  width: 230px;
+  padding-left: 25px;
+  color: #898989;
+  font-size: 12px;
+}
+.modal__register .btn {
+  margin-bottom: 20px;
+}
+.btn {
+  min-width: 115px;
+  padding: 10px 13px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #0089e5;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+.btn:hover,
+.btn:active {
+  background-color: #00a2f4;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
