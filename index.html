@@ -485,40 +485,42 @@
       <input type="text" name="name" id="name" class="modal__input" required>
       <label for="phone" class="modal__label">Ваш телефон<span>*</span></label>
       <input type="tel" name="phone" id="phone" class="modal__input" required>
-      <input type="checkbox" name="check" class="modal__checkbox" checked>
-      <label for="check" class="modal__check">Я согласен(а) на <a href="#">обработку персональных данных</a></label>
+      <input type="checkbox" name="check" id="check1" class="modal__checkbox" checked>
+      <label for="check1" class="modal__check">Я согласен(а) на <a href="#">обработку персональных данных</a></label>
       <button type="submit" class="btn">Заказать звонок</button>
     </form>
   </div>
   
   <div style="display: none;" id="sign" class="modal modal--sign">
-    <form action="#" class="modal__sign">
-      <p class="modal__title">Войти на сайт</p>
-      <label for="name" class="modal__label">Логин:<span>*</span></label>
-      <input type="text" name="name" id="name" class="modal__input" placeholder="e-mail" required>
-      <label for="phone" class="modal__label">Пароль:<span>*</span></label>
-      <input type="tel" name="phone" id="phone" class="modal__input" placeholder="Пароль" required>
-      <input type="checkbox" name="check" class="modal__checkbox" checked>
-      <label for="check" class="modal__check">Запомнить меня</label>
-      <a href="#" class="link">Забыли пароль?</a>
-      <button type="submit" class="btn">Войти</button>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--tw" title="Twitter"></a>
-          </li>
-        </ul>
+    <div class="modal__wrap">
+      <form action="#" class="modal__sign">
+        <p class="modal__title">Войти на сайт</p>
+        <label for="name" class="modal__label">Логин:<span>*</span></label>
+        <input type="text" name="name" id="name" class="modal__input" placeholder="e-mail" required>
+        <label for="phone" class="modal__label">Пароль:<span>*</span></label>
+        <input type="tel" name="phone" id="phone" class="modal__input" placeholder="Пароль" required>
+        <input type="checkbox" name="check" id="check2" class="modal__checkbox" checked>
+        <label for="check2" class="modal__check">Запомнить меня</label>
+        <a href="#" class="link">Забыли пароль?</a>
+        <button type="submit" class="btn">Войти</button>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--tw" title="Twitter"></a>
+            </li>
+          </ul>
+        </div>
+      </form>
+      <div class="modal__register">
+        <button type="submit" class="btn">Зарегистрироваться</button>
+        <p>После регистрации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности</p>
       </div>
-    </form>
-    <div class="modal__register">
-      <button type="submit" class="btn">Зарегистрироваться</button>
-      <p>После регистрации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности</p>
     </div>
   </div>
   
