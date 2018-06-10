@@ -911,6 +911,7 @@ button {
   transition: ease 0.2s;
 }
 .slider {
+  height: 400px;
   margin-bottom: 40px;
 }
 .slider:hover .slider__prev,
@@ -1728,6 +1729,10 @@ button {
   .menu__sublink:active {
     color: #fff;
   }
+  .slider__bg {
+    height: 100%;
+    width: auto;
+  }
 }
 @media (max-width: 1022px) {
   .slider__text {
@@ -1953,11 +1958,6 @@ button {
   }
   .slider__item {
     height: 400px;
-  }
-  .slider__bg {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .catalog {
     -ms-flex-pack: distribute;
