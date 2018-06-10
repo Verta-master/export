@@ -20,6 +20,13 @@ if (window.innerWidth < 1182) {
   })
 }
 
+//Sidebar filter {
+$('.sidebar__title').click(function() {
+  $(this).next().slideToggle();
+  $(this).toggleClass('sidebar__title--opened');
+})
+
+
 //Scroll to top
 $(window).scroll(function(){
   if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
