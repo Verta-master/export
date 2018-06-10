@@ -14,3 +14,31 @@
     transition: ease 0.2s;
   }
 }
+
+.btn-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 3px;
+  z-index: 50;
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #0089e5;
+  transition: ease 0.2s;
+  
+  i {
+    display: block;
+    width: 16px;
+    height: 9px;
+    margin: 15px auto;
+    background: url(../img/sprite_to_up.png) no-repeat bottom;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: #00a2f4;
+    transition: ease 0.2s;
+  }
+}
