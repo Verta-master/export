@@ -6,13 +6,17 @@ $('.menu__sublink--more').click(function() {
 //Mobile menu
 $('.menu__btn').click(function() {
   $('.menu').toggleClass('menu--opened');
-  $('.menu__list').slideToggle();
+  $('.menu__wrap').slideToggle();
 })
 
-if (window.innerWidth < 766) {
-  $('.menu__link').click(function() {
-    $('.menu__list').slideToggle();
-    $('.menu').removeClass('menu--opened');
+if (window.innerWidth < 1182) {
+  $('.menu__subbtn').click(function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass('menu__subbtn--down');
+  });
+  $('.menu__item--more').click(function(e) {
+    e.preventDefault();
+    $('.menu__sublist--more').slideToggle();
   })
 }
 
