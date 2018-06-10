@@ -14,6 +14,7 @@
   }
 }
 
+.sidebar__filter-btn,
 .sidebar__menu-btn {
   display: none;
 }
@@ -82,4 +83,118 @@
 
 .sidebar__filter {
   margin-bottom: 40px;
+}
+
+.sidebar__btns {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar__block {
+  padding: 13px 20px;
+  border: 1px solid #ededed;
+  
+  &--border {
+    border-top: none;
+  }
+  
+  .modal__check {
+    margin-bottom: 5px;
+  }
+}
+
+.sidebar__title {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+  
+  &:hover,
+  &--opened {
+    color: #0089e5;
+  }
+}
+
+.sidebar__input {
+  display: block;
+  width: 95px;
+  height: 25px;
+  padding: 0 4px;
+  margin-top: 5px;
+  border: 1px solid #ededed;
+}
+
+.sidebar__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar__number {
+  width: 50%;
+}
+
+.sidebar__range {
+  margin-bottom: 20px;
+  
+  .ui-slider {
+    position: relative;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #e3e3e3;
+    background-color: #fff;
+    background-image: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 2px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: -6px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление полосы по которой ходит ползунок */
+  .ui-widget-content { 
+    border: none;
+    background-color: #585858;
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    border: none;
+    background-color: #0089e5;
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 4px;
+  }
 }

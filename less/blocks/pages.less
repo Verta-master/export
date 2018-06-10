@@ -1,0 +1,79 @@
+.pages {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 2px;
+  color: #777;
+  background-color: #e5e5e5;
+  
+  &--active {
+    color: #fff;
+    background-color: #0089e5;
+  }
+}
+
+.pages__prev,
+.pages__next {
+  top: 60%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+  i {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/uni-slider-buttons.png) no-repeat;
+  }
+}
+
+.pages__prev {
+  margin-right: auto;
+  
+  i {
+    background-position: -18px 0;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: #0089e5;
+    
+    i {
+      background-position: -18px -16px;
+    }
+  }
+}
+
+.pages__next {
+  margin-left: auto;
+  
+  i {
+    background-position: 0 0;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: #0089e5;
+    
+    i {
+      background-position: 0 -16px;
+    }
+  }
+}
