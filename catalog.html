@@ -151,31 +151,33 @@
           <div class="sidebar__block">
             <button type="button" class="sidebar__title">Розничная цена</button>
             <div class="sidebar__price">
-              <div class="sidebar__number">
-                <p class="filter__title"></p>
-                <input type="text" id="amount-min" class="filter__input">
+              <div class="sidebar__wrap">
+                <div class="sidebar__number">
+                  <span>От</span>
+                  <input type="text" id="amount-min" class="sidebar__input">
+                </div>
+                <div class="sidebar__number">
+                  <span>До</span>
+                  <input type="text" id="amount-max" class="sidebar__input">
+                </div>
               </div>
-              <div class="sidebar__number">
-                <p class="filter__title"></p>
-                <input type="text" id="amount-max" class="filter__input">
-              </div>
-              <div class="filter__range">
+              <div class="sidebar__range">
                 <div id="slider-range"></div>
               </div>
             </div>
           </div>
-          <div class="sidebar__block">
+          <div class="sidebar__block sidebar__block--border">
             <button type="button" class="sidebar__title">Бренд</button>
-            <input type="checkbox" name="brand1" id="brand1" class="sidebar__checkbox">
-            <label for="brand1" class="sidebar__label">Graco (1)</label>
-            <input type="checkbox" name="brand2" id="brand2" class="sidebar__checkbox">
-            <label for="brand2" class="sidebar__label">Meclube (2)</label>
-            <input type="checkbox" name="brand3" id="brand3" class="sidebar__checkbox">
-            <label for="brand3" class="sidebar__label">Piusi (10)</label>
-            <input type="checkbox" name="brand4" id="brand4" class="sidebar__checkbox">
-            <label for="brand4" class="sidebar__label">Pressol (16)</label>
-            <input type="checkbox" name="brand5" id="brand5" class="sidebar__checkbox">
-            <label for="brand5" class="sidebar__label">Samoa (7)</label>
+            <input type="checkbox" name="brand1" id="brand1" class="modal__checkbox">
+            <label for="brand1" class="modal__check">Graco (1)</label>
+            <input type="checkbox" name="brand2" id="brand2" class="modal__checkbox">
+            <label for="brand2" class="modal__check">Meclube (2)</label>
+            <input type="checkbox" name="brand3" id="brand3" class="modal__checkbox">
+            <label for="brand3" class="modal__check">Piusi (10)</label>
+            <input type="checkbox" name="brand4" id="brand4" class="modal__checkbox">
+            <label for="brand4" class="modal__check">Pressol (16)</label>
+            <input type="checkbox" name="brand5" id="brand5" class="modal__checkbox">
+            <label for="brand5" class="modal__check">Samoa (7)</label>
           </div>
           <div class="sidebar__btns">
             <button class="btn">Показать</button>
@@ -269,8 +271,8 @@
         </nav>
       </section>
       
-      <!--   Catalog list   -->
       <section class="main">
+        <!--   Catalog list   -->
         <ul class="catalog catalog--internal">
           <li class="catalog__item">
             <div class="catalog__like-wrap">
@@ -338,6 +340,16 @@
             <span class="catalog__comment">Нет в наличии</span>
           </li>
         </ul>
+        
+        <!--   Pagination   -->
+        <nav class="pages">
+          <a href="#" class="pages__prev"><i></i></a>
+          <a href="#" class="pages__link">1</a>
+          <a href="#" class="pages__link pages__link--active">2</a>
+          <a href="#" class="pages__link">3</a>
+          <a href="#" class="pages__link">4</a>
+          <a href="#" class="pages__next"><i></i></a>
+        </nav>
       </section>
     </div>
   </main>

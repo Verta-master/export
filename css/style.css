@@ -895,6 +895,19 @@ button {
   -webkit-transition: ease 0.2s;
   transition: ease 0.2s;
 }
+.btn--white {
+  background-color: #fff;
+  color: #434343;
+  border: 1px solid #dadada;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+.btn--white:hover,
+.btn--white:active {
+  background-color: #dadada;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
 .btn-top {
   width: 40px;
   height: 40px;
@@ -1684,6 +1697,7 @@ button {
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
+.sidebar__filter-btn,
 .sidebar__menu-btn {
   display: none;
 }
@@ -1745,6 +1759,210 @@ button {
 }
 .sidebar__filter {
   margin-bottom: 40px;
+}
+.sidebar__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sidebar__block {
+  padding: 13px 20px;
+  border: 1px solid #ededed;
+}
+.sidebar__block--border {
+  border-top: none;
+}
+.sidebar__block .modal__check {
+  margin-bottom: 5px;
+}
+.sidebar__title {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.sidebar__title:hover,
+.sidebar__title--opened {
+  color: #0089e5;
+}
+.sidebar__input {
+  display: block;
+  width: 95px;
+  height: 25px;
+  padding: 0 4px;
+  margin-top: 5px;
+  border: 1px solid #ededed;
+}
+.sidebar__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.sidebar__number {
+  width: 50%;
+}
+.sidebar__range {
+  margin-bottom: 20px;
+  /* Ползунок */
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  /* позиционируем ползунки */
+  /* оформление полосы по которой ходит ползунок */
+  /* оформление активного участка (между двумя ползунками) */
+  /* скругление для полосы слайдера */
+}
+.sidebar__range .ui-slider {
+  position: relative;
+}
+.sidebar__range .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #e3e3e3;
+  background-color: #fff;
+  background-image: none;
+  cursor: pointer;
+  outline: none;
+}
+.sidebar__range .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+.sidebar__range .ui-slider-horizontal {
+  height: 2px;
+}
+.sidebar__range .ui-slider-horizontal .ui-slider-handle {
+  top: -6px;
+  margin-left: -8px;
+}
+.sidebar__range .ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.sidebar__range .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.sidebar__range .ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+.sidebar__range .ui-widget-content {
+  border: none;
+  background-color: #585858;
+}
+.sidebar__range .ui-widget-header {
+  border: none;
+  background-color: #0089e5;
+}
+.sidebar__range .ui-corner-all {
+  border-radius: 4px;
+}
+.pages {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pages__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33px;
+  height: 33px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 2px;
+  color: #777;
+  background-color: #e5e5e5;
+}
+.pages__link--active {
+  color: #fff;
+  background-color: #0089e5;
+}
+.pages__prev,
+.pages__next {
+  top: 60%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+.pages__prev i,
+.pages__next i {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/uni-slider-buttons.png) no-repeat;
+}
+.pages__prev {
+  margin-right: auto;
+}
+.pages__prev i {
+  background-position: -18px 0;
+}
+.pages__prev:hover,
+.pages__prev:active {
+  background-color: #0089e5;
+}
+.pages__prev:hover i,
+.pages__prev:active i {
+  background-position: -18px -16px;
+}
+.pages__next {
+  margin-left: auto;
+}
+.pages__next i {
+  background-position: 0 0;
+}
+.pages__next:hover,
+.pages__next:active {
+  background-color: #0089e5;
+}
+.pages__next:hover i,
+.pages__next:active i {
+  background-position: 0 -16px;
 }
 @media (max-width: 1182px) {
   .wrapper {
