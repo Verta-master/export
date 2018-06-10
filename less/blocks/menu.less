@@ -1,5 +1,9 @@
 .menu {
   background-color: #0089e5;
+  
+  .search {
+    display: none;
+  }
 }
 
 .menu__subbtn,
@@ -15,7 +19,7 @@
 }
 
 .menu__item {
-  width: 25%;
+  flex-grow: 1;
   position: relative;
   
   &:hover {
@@ -50,8 +54,9 @@
   position: absolute;
   z-index: 10;
   top: 100%;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 255px;
   background-color: #fff;
   border-top: 2px solid #1A58D7;
   box-shadow: 0 4px 2px rgba(0,0,0,0.5);
