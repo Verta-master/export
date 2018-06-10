@@ -1917,8 +1917,10 @@ button {
   .news .title {
     margin-top: -8px;
   }
-  .brand__slide {
-    width: 115px;
+  .brand {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .subscribe {
     -ms-flex-wrap: wrap;
@@ -1956,6 +1958,10 @@ button {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .catalog {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (max-width: 480px) {
@@ -2000,9 +2006,6 @@ button {
     padding-right: 0;
     text-align: center;
   }
-  .brand__slide {
-    width: 150px;
-  }
   .footer {
     padding-left: 10px;
     padding-right: 10px;
@@ -2026,5 +2029,11 @@ button {
     margin-bottom: 20px;
     border-right: none;
     border-bottom: 1px solid #e8e8e8;
+  }
+  .brand {
+    width: 350px;
+  }
+  .brand__slide {
+    width: 175px;
   }
 }
