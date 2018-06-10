@@ -1997,6 +1997,9 @@ button {
   .category__item--wide {
     width: 495px;
   }
+  .catalog--internal .catalog__item {
+    width: 233px;
+  }
   .catalog__item {
     width: 238px;
   }
@@ -2130,6 +2133,9 @@ button {
     height: 100%;
     width: auto;
   }
+  .sidebar__input {
+    width: 77px;
+  }
 }
 @media (max-width: 1022px) {
   .slider__text {
@@ -2186,6 +2192,74 @@ button {
   }
   .brand__slide {
     width: 185px;
+  }
+  .wrapper--catalog {
+    display: block;
+  }
+  .main,
+  .sidebar {
+    width: 100%;
+  }
+  .catalog--internal .catalog__item {
+    width: 230px;
+  }
+  .sidebar__filter-btn,
+  .sidebar__menu-btn {
+    display: block;
+    width: 100%;
+    padding: 13px 20px;
+    text-align: left;
+    position: relative;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+  }
+  .sidebar__filter-btn::after,
+  .sidebar__menu-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 10px;
+    height: 5px;
+    background-image: url(../img/icon-down-blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .sidebar__filter-btn:hover,
+  .sidebar__menu-btn:hover,
+  .sidebar__filter-btn:active,
+  .sidebar__menu-btn:active {
+    background-color: #dadada;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+  }
+  .sidebar__filter-btn {
+    margin-bottom: 25px;
+    border: 1px solid #e8e8e8;
+  }
+  .sidebar__menu-btn--opened {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .sidebar__list,
+  .sidebar__filter {
+    display: none;
+  }
+  .sidebar__menu {
+    margin-bottom: 25px;
+  }
+  .sidebar__input {
+    width: 100%;
+  }
+  .sidebar__number {
+    width: 48%;
+  }
+  .sidebar__btns .btn {
+    width: 48%;
+  }
+  .sidebar__item:hover .sidebar__sublist {
+    display: none;
   }
 }
 @media (max-width: 766px) {
@@ -2359,6 +2433,10 @@ button {
   .catalog {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .catalog--internal .catalog__item:nth-child(4n),
+  .catalog--internal .catalog__item {
+    margin-right: 0;
   }
 }
 @media (max-width: 480px) {
