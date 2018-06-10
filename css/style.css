@@ -871,6 +871,33 @@ button {
   -webkit-transition: ease 0.2s;
   transition: ease 0.2s;
 }
+.btn-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 3px;
+  z-index: 50;
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #0089e5;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+.btn-top i {
+  display: block;
+  width: 16px;
+  height: 9px;
+  margin: 15px auto;
+  background: url(../img/sprite_to_up.png) no-repeat bottom;
+}
+.btn-top:hover,
+.btn-top:active {
+  background-color: #00a2f4;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
 .slider {
   margin-bottom: 40px;
 }
@@ -1392,6 +1419,7 @@ button {
 .footer {
   color: #292929;
   padding: 23px 20px;
+  padding-bottom: 50px;
   border-top: 1px solid #e7e7e7;
 }
 .footer__wrap {
@@ -1436,9 +1464,17 @@ button {
   font-size: 13px;
   line-height: 21px;
 }
+.footer__title:hover,
+.footer__title:active {
+  color: #636363;
+}
 .footer__item {
   font-size: 11px;
   line-height: 21px;
+}
+.footer__item:hover,
+.footer__item:active {
+  color: #0089e5;
 }
 .subscribe {
   width: 755px;
