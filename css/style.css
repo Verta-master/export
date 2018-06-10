@@ -1177,6 +1177,7 @@ button {
   background-image: linear-gradient(45deg, #56abd2 0%, #5b1cc4 100%);
 }
 .catalog__title {
+  max-width: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   color: #363532;
@@ -1188,6 +1189,7 @@ button {
   color: #888b92;
 }
 .catalog__category {
+  max-width: 100%;
   display: block;
   margin-top: auto;
   margin-bottom: 5px;
@@ -1197,6 +1199,7 @@ button {
   color: #888b92;
 }
 .catalog__price {
+  max-width: 100%;
   margin: 0;
   font-size: 17px;
   color: #3b3b43;
