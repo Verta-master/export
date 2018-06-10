@@ -1,0 +1,47 @@
+.brand__slide {
+  width: 193px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  a {
+    font-size: 13px;
+    color: #0089e5;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.brand__prev,
+.brand__next {
+  top: 60%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: url(../img/uni-slider-buttons.png) no-repeat;
+}
+
+.brand__prev {
+  background-position: -14px 3px;
+  
+  &:hover,
+  &:active {
+    background-color: #0089e5;
+    background-position: -14px -12px;
+  }
+}
+
+.brand__next {
+  background-position: 4px 3px;
+  
+  &:hover,
+  &:active {
+    background-color: #0089e5;
+    background-position: 3px -12px;
+  }
+}

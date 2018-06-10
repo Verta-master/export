@@ -1,0 +1,41 @@
+.social {
+  .link {
+    display: block;
+    margin-top: 25px;
+    text-align: right;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social__item {
+  margin-left: 10px;
+}
+
+.social__link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/sprite_social.png) no-repeat;
+  
+  &--vk {
+    background-position: 0 0;
+  }
+  
+  &--fb {
+    background-position: -35px 0;
+  }
+  
+  &--tw {
+    background-position: -105px 0;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}

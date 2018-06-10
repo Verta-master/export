@@ -1,0 +1,132 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.catalog__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 282px;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  background-color: #fff;
+  border: 1px solid rgba(232, 232, 232, 0.5);
+  
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  &:hover,
+  &:active {
+    .catalog__like-wrap {
+      display: block;
+    }
+  }
+}
+
+.catalog__img {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  padding-bottom: 10px;
+}
+
+.catalog__label-wrap {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+
+.catalog__label {
+  display: block;
+  margin-bottom: 6px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 5px;
+  border-radius: 15px;
+  
+  &--hit {
+    width: 40px;
+    background-color: #329b48;
+  }
+  
+  &--advice {
+    width: 70px;
+    background-color: #a61d62;
+    background-image: linear-gradient(to bottom, #621276 0%, #a61d62 100%);
+  }
+  
+  &--new {
+    width: 63px;
+    background-color: rgba(91,28,196,1);
+    background-image: linear-gradient(45deg, rgba(86,171,210,1) 0%, rgba(91,28,196,1) 100%);
+  }
+}
+
+.catalog__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #363532;
+  font-weight: 400;
+  margin-bottom: 11px;
+  
+  &:hover,
+  &:active {
+    color: #888b92;
+  }
+}
+
+.catalog__category {
+  display: block;
+  margin-top: auto;
+  margin-bottom: 5px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 14px;
+  color: #888b92;
+}
+
+.catalog__price {
+  margin: 0;
+  font-size: 17px;
+  color: #3b3b43;
+}
+
+.catalog__like-wrap {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.catalog__like {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url(../img/icon-star.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog__compare {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon-compare.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
