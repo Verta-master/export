@@ -5,7 +5,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>ПСК Экспорт</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -136,57 +136,17 @@
     <nav class="breadcrumbs wrapper">
       <a href="#" class="breadcrumbs__link">Главная</a>
       <a href="#" class="breadcrumbs__link">Каталог</a>
-      <a href="#" class="breadcrumbs__link">Смазочное и маслораздаточное оборудование</a>
-      <span class="breadcrumbs__link breadcrumbs__link--active">Катушки для топлива, масла и смазки</span>
+      <a href="#" class="breadcrumbs__link">Медицинское оборудование</a>
+      <a href="#" class="breadcrumbs__link">Медицинские разделительные трансформаторы</a>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Медицинский разделительный трансформатор ТР-63М</span>
     </nav>
     
-    <h1 class="title-main wrapper">Катушки для топлива, масла и смазки</h1>
+    <h1 class="title-main wrapper">Медицинский разделительный трансформатор ТР-63М</h1>
     
     <div class="wrapper wrapper--catalog">
       
       <!--   Left sidebar menu   -->
       <section class="sidebar">
-        <button class="sidebar__filter-btn">Фильтр</button>
-        <form action="#" class="sidebar__filter">
-          <div class="sidebar__block">
-            <button type="button" class="sidebar__title sidebar__title--opened">Розничная цена</button>
-            <div class="sidebar__price">
-              <div class="sidebar__wrap">
-                <div class="sidebar__number">
-                  <span>От</span>
-                  <input type="text" id="amount-min" class="sidebar__input">
-                </div>
-                <div class="sidebar__number">
-                  <span>До</span>
-                  <input type="text" id="amount-max" class="sidebar__input">
-                </div>
-              </div>
-              <div class="sidebar__range">
-                <div id="slider-range"></div>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar__block sidebar__block--border">
-            <button type="button" class="sidebar__title">Бренд</button>
-            <div class="sidebar__price">
-              <input type="checkbox" name="brand1" id="brand1" class="modal__checkbox">
-              <label for="brand1" class="modal__check">Graco (1)</label>
-              <input type="checkbox" name="brand2" id="brand2" class="modal__checkbox">
-              <label for="brand2" class="modal__check">Meclube (2)</label>
-              <input type="checkbox" name="brand3" id="brand3" class="modal__checkbox">
-              <label for="brand3" class="modal__check">Piusi (10)</label>
-              <input type="checkbox" name="brand4" id="brand4" class="modal__checkbox">
-              <label for="brand4" class="modal__check">Pressol (16)</label>
-              <input type="checkbox" name="brand5" id="brand5" class="modal__checkbox">
-              <label for="brand5" class="modal__check">Samoa (7)</label>
-            </div>
-          </div>
-          <div class="sidebar__btns">
-            <button class="btn">Показать</button>
-            <button class="btn btn--white">Сбросить</button>
-          </div>
-        </form>
-        
         <nav class="sidebar__menu">
           <button class="sidebar__menu-btn">Каталог</button>
           <ul class="sidebar__list">
@@ -274,84 +234,162 @@
       </section>
       
       <section class="main">
-        <!--   Catalog list   -->
-        <ul class="catalog catalog--internal">
-          <li class="catalog__item">
-            <div class="catalog__like-wrap">
-              <a href="#" class="catalog__like" title="Добавить товар в список отложенных"></a>
-              <a href="#" class="catalog__compare" title="Добавить товар в сравнение"></a>
+        <!--   Card   -->
+        <article class="card">
+          <div class="card__wrap">
+            
+            <!--    Slider        -->
+            <div class="card__gallery">
+              <a href="#" class="card__img">
+                <img src="img/img-card.jpg" alt="Медицинский разделительный трансформатор" width="364" height="364">
+              </a>
+              <div class="swiper-container card__slider wrapper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide card__slide">
+                    <img src="img/img-card.jpg" alt="Медицинский разделительный трансформатор" width="364" height="364">
+                  </li>
+                  <li class="swiper-slide card__slide">
+                    <img src="img/img-thumb.jpg" alt="Медицинский разделительный трансформатор" width="466" height="291">
+                  </li>
+                  <li class="swiper-slide card__slide">
+                    <img src="img/img-card.jpg" alt="Медицинский разделительный трансформатор" width="364" height="364">
+                  </li>
+                  <li class="swiper-slide card__slide">
+                    <img src="img/img-thumb.jpg" alt="Медицинский разделительный трансформатор" width="466" height="291">
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-button-prev card__prev"></div>
+              <div class="swiper-button-next card__next"></div>
             </div>
-            <a href="#" class="catalog__img">
-              <img src="img/catalog-img.jpg" alt="Поворотный кронштейн" width="170" height="170">
-            </a>
-            <a href="#" class="catalog__brand">Piusi</a>
-            <p class="catalog__title"><a href="#">Поворотный кронштейн для катушек Piusi-S</a></p>
-            <p class="catalog__price">3 594 руб.</p>
-            <a href="#" class="btn catalog__btn">Купить</a>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like-wrap">
-              <a href="#" class="catalog__like" title="Добавить товар в список отложенных"></a>
-              <a href="#" class="catalog__compare" title="Добавить товар в сравнение"></a>
+            
+            <!--    Info        -->
+            <div class="card__info">
+              <figure class="card__brand">
+                <img src="img/brand.png" alt="Brand" width="191" height="109">
+              </figure>
+              <p class="card__state card__state--yes">В наличии</p>
+              <p class="card__state card__state--no">Нет в наличиии</p>
+              <p class="card__price">0 руб.</p>
+              <form action="#" class="card__buy">
+                <div class="card__btns">
+                  <button type="button" class="card__number card__number--minus">-</button>
+                  <input type="text" name="number" class="card__value" value="1">
+                  <button type="button" class="card__number card__number--plus">+</button>
+                </div>
+                <a href="#" class="btn btn--white card__click">Купить в клик</a>
+                <a href="#" class="btn card__basket">В корзину</a>
+                <a href="#" class="catalog__compare card__compare" title="Добавить товар в сравнение"></a>
+                <a href="#" class="catalog__like card__like" title="Добавить товар в список отложенных"></a>
+              </form>
             </div>
-            <a href="#" class="catalog__img">
-              <img src="img/catalog-img.jpg" alt="Поворотный кронштейн" width="170" height="170">
-            </a>
-            <a href="#" class="catalog__brand">Piusi</a>
-            <p class="catalog__title"><a href="#">Поворотный кронштейн для катушек Piusi-S</a></p>
-            <p class="catalog__price">3 594 руб.</p>
-            <span class="catalog__comment">Нет в наличии</span>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like-wrap">
-              <a href="#" class="catalog__like" title="Добавить товар в список отложенных"></a>
-              <a href="#" class="catalog__compare" title="Добавить товар в сравнение"></a>
-            </div>
-            <a href="#" class="catalog__img">
-              <img src="img/catalog-img.jpg" alt="Поворотный кронштейн" width="170" height="170">
-            </a>
-            <a href="#" class="catalog__brand">Piusi</a>
-            <p class="catalog__title"><a href="#">Поворотный кронштейн для катушек Piusi-S</a></p>
-            <p class="catalog__price">3 594 руб.</p>
-            <span class="catalog__comment">Нет в наличии</span>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like-wrap">
-              <a href="#" class="catalog__like" title="Добавить товар в список отложенных"></a>
-              <a href="#" class="catalog__compare" title="Добавить товар в сравнение"></a>
-            </div>
-            <a href="#" class="catalog__img">
-              <img src="img/catalog-img.jpg" alt="Поворотный кронштейн" width="170" height="170">
-            </a>
-            <a href="#" class="catalog__brand">Piusi</a>
-            <p class="catalog__title"><a href="#">Поворотный кронштейн для катушек Piusi-S</a></p>
-            <p class="catalog__price">3 594 руб.</p>
-            <a href="#" class="btn catalog__btn">Купить</a>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like-wrap">
-              <a href="#" class="catalog__like" title="Добавить товар в список отложенных"></a>
-              <a href="#" class="catalog__compare" title="Добавить товар в сравнение"></a>
-            </div>
-            <a href="#" class="catalog__img">
-              <img src="img/catalog-img.jpg" alt="Поворотный кронштейн" width="170" height="170">
-            </a>
-            <a href="#" class="catalog__brand">Piusi</a>
-            <p class="catalog__title"><a href="#">Поворотный кронштейн для катушек Piusi-S</a></p>
-            <p class="catalog__price">3 594 руб.</p>
-            <span class="catalog__comment">Нет в наличии</span>
-          </li>
-        </ul>
+          </div>
+          
+          <ul class="card__list card__list--half">
+            <li>Бренд — <a href="#">ООО «Энергозащитные системы»</a>;</li>
+            <li>Напряжение питания, В — 1x220;</li>
+            <li>Выходная мощность, ВА — 63;</li>
+            <li>Выходное напряжение, В — линейное 220;</li>
+            <li>Сопротивление изоляции, МОм (не менее) — 300;</li>
+            <li>Макс. допустимое фазное входное напряжение, В — 255;</li>
+          </ul>
+          <a href="#" class="link">Все характеристики</a>
+        </article>
         
-        <!--   Pagination   -->
-        <nav class="pages">
-          <a href="#" class="pages__prev"><i></i></a>
-          <a href="#" class="pages__link">1</a>
-          <a href="#" class="pages__link pages__link--active">2</a>
-          <a href="#" class="pages__link">3</a>
-          <a href="#" class="pages__link">4</a>
-          <a href="#" class="pages__next"><i></i></a>
-        </nav>
+        <!--   Tabs     -->
+        <div class="card__tabs" id="card-tabs">
+          <ul class="card__title">
+            <li class="card__name"><a href="#card-tabs-1">Описание</a></li>
+            <li class="card__name"><a href="#card-tabs-2">Характеристики</a></li>
+            <li class="card__name"><a href="#card-tabs-3">Отзывы</a></li>
+          </ul>
+          <div class="card__field" id="card-tabs-1">
+            <p>Разделительный трансформатор ТР и ТРТ с контролем изоляции производства "Энергозащитные системы" широко применяется в медицине (медицинский трансформатор), во влажных и запылённых средах (горно-добывающая, нефтяная отрасли) с целью создания безопасной IT-сети.</p>
+            <p>Согласно ГОСТ 50571.28, электрообеспечение медицинских помещений группы 2 должно осуществляться посредством безопасной IT-сети.  При этом контроль состояния IT-сети происходит через размещённые в непосредственном доступе Посты Дистанционного Контроля, информирующие как о состоянии сети, так и о типе аварии в случае её возникновения.</p>
+            <p>Основным компонентом IT-сети является разделительный трансформатор с контролем изоляции серии ТР или ТРТ с системой контроля изоляции и выносным постом дистанционного контроля ПДК.</p>
+            <p><b>Стандартная комплектация:</b></p>
+            <ul class="card__list">
+              <li>Разделительный трансформатор с системой контроля изоляции, температуры трансформатора, тока нагрузки;</li>
+              <li>с системой плавного пуска;</li>
+              <li>автоматическими выключателями по входу и выходу;</li>
+              <li>с индикацией работы и аварии на лицевой панели корпуса; с шиной PE.</li>
+            </ul>
+          </div>
+          <div class="card__field" id="card-tabs-2">
+            <ul class="card__list card__list--half">
+              <li>
+                <p>Бренд</p>
+                <p><a href="#">ООО «Энергозащитные системы»</a></p>
+              </li>
+              <li>
+                <p>Напряжение питания, В</p>
+                <p>1x220</p>
+              </li>
+              <li>
+                <p>Выходная мощность, ВА</p>
+                <p>63</p>
+              </li>
+              <li>
+                <p>Выходное напряжение, В</p>
+                <p>линейное 220</p>
+              </li>
+              <li>
+                <p>Сопротивление изоляции, МОм (не менее)</p>
+                <p>300</p>
+              </li>
+              <li>
+                <p>Макс. допустимое фазное входное напряжение, В</p>
+                <p>255</p>
+              </li>
+              <li>
+                <p>Напряжение контроля изоляции, кВ</p>
+                <p>4</p>
+              </li>
+              <li>
+                <p>Тест контроля изоляции, кОм</p>
+                <p>50</p>
+              </li>
+              <li>
+                <p>Температурный диапазон эксплуатации, °С</p>
+                <p>0...+40</p>
+              </li>
+              <li>
+                <p>Время срабатывания системы контроля изоляции, с</p>
+                <p>1-2</p>
+              </li>
+              <li>
+                <p>Уровень шума, дБ (не более)</p>
+                <p>35</p>
+              </li>
+              <li>
+                <p>Исполнение корпуса</p>
+                <p>IP21 - IP54</p>
+              </li>
+              <li>
+                <p>Перегрузочная способность, %</p>
+                <p>60% - 60 мин. 40% - 120 мин</p>
+              </li>
+              <li>
+                <p>Габаритные размеры, мм</p>
+                <p>310х395х150</p>
+              </li>
+              <li>
+                <p>Масса, кг</p>
+                <p>5</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card__field" id="card-tabs-3">
+            <button type="button" class="btn">Оставить отзыв</button>
+            <form action="#" class="card__form">
+              <label for="card-name" class="card__label">ФИО <span>*</span></label>
+              <input type="text" name="card-name" id="card-name" class="card__input">
+              <label for="card-review" class="card__label">Отзыв <span>*</span></label>
+              <textarea name="card-review" id="card-review" class="card__text"></textarea>
+              <button type="submit" class="btn">Отправить отзыв</button>
+            </form>
+          </div>
+        </div>
       </section>
     </div>
   </main>
@@ -462,9 +500,29 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/sidebar.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="js/jquery.ui.touch-punch.min.js"></script>
-  <script src="js/filter-range.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#card-tabs").tabs();
+    });
+  </script>	
+  
+  <!-- Slider -->
+  <script>
+    var mySwiper = new Swiper ('.card__slider', {
+      navigation: {
+        nextEl: '.card__next',
+        prevEl: '.card__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+    });
+  </script>
 </body>
 </html>
