@@ -1,0 +1,305 @@
+.card {
+  .link {
+    font-size: 13px;
+  }
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__gallery {
+  width: 200px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.card__info {
+  width: 615px;
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+.card__slider {
+  width: 140px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__slide {
+  width: 70px;
+  height: 70px;
+  padding: 4px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+.card__prev,
+.card__next {
+  top: auto;
+  bottom: 20px;
+}
+
+.card__brand {
+  float: right;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+.card__state {
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+  color: #474747;
+  padding-left: 20px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 14px;
+    height: 10px;
+    background-image: url(../img/state.png);
+    background-repeat: no-repeat;
+  }
+  
+  &--yes::before {
+    background-position: top;
+  }
+  
+  &--no::before {
+    background-position: bottom;
+  }
+}
+
+.card__price {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #252525;
+  font-weight: 700;
+}
+
+.card__buy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.card__number {
+  width: 35px;
+  height: 40px;
+  color: #707070;
+  border: 1px solid #d2d2d2;
+  
+  &--minus {
+    border-radius: 3px 0 0 3px;
+  }
+  
+  &--plus {
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+.card__value {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.card__click {
+  width: 205px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.card__basket {
+  width: 170px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.card__compare {
+  margin-right: 20px;
+}
+
+.card__like {
+  margin-bottom: 0;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  
+  li {
+    width: 100%;
+    position: relative;
+    font-size: 13px;
+    line-height: 20px;
+    padding-left: 10px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #0089e5;
+    }
+  }
+  
+  a {
+    color: #0089e5;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  &--half {
+    li {
+      width: 50%;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      color: #707070;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    p {
+      margin: 0;
+      width: 50%;
+    }
+  }
+}
+
+.card__tabs {
+  margin-top: 50px;
+}
+
+.card__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgb(231,231,231);
+  
+  .ui-tabs-active {
+    font-weight: 700;
+    
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.card__name {
+  padding: 7px 25px;
+  position: relative;
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0089e5;
+  }
+}
+
+.card__field {
+  padding-top: 15px;
+  padding-bottom: 50px;
+  color: #8b8b8b;
+}
+
+.card__form {
+  margin-top: 15px;
+}
+
+.card__label {
+  line-height: 35px;
+  font-size: 10px;
+  color: #000;
+  font-weight: 700;
+  
+  span {
+    color: red;
+  }
+}
+
+.card__text,
+.card__input {
+  display: block;
+  width: 100%;
+  background: #ededed;
+  color: #494949;
+  border-radius: 5px;
+}
+
+.card__input {
+  height: 35px;
+  padding: 0px 10px;
+}
+
+.card__text {
+  margin-bottom: 20px;
+  height: 150px;
+  min-height: 150px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
