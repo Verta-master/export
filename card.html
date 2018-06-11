@@ -243,7 +243,7 @@
               <a href="#" class="card__img">
                 <img src="img/img-card.jpg" alt="Медицинский разделительный трансформатор" width="364" height="364">
               </a>
-              <div class="swiper-container card__slider wrapper">
+              <div class="swiper-container card__slider">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide card__slide">
                     <img src="img/img-card.jpg" alt="Медицинский разделительный трансформатор" width="364" height="364">
@@ -277,7 +277,7 @@
                   <input type="text" name="number" class="card__value" value="1">
                   <button type="button" class="card__number card__number--plus">+</button>
                 </div>
-                <a href="#" class="btn btn--white card__click">Купить в клик</a>
+                <a data-fancybox data-src="#click" href="javascript:;" class="btn btn--white card__click">Купить в 1 клик</a>
                 <a href="#" class="btn card__basket">В корзину</a>
                 <a href="#" class="catalog__compare card__compare" title="Добавить товар в сравнение"></a>
                 <a href="#" class="catalog__like card__like" title="Добавить товар в список отложенных"></a>
@@ -380,7 +380,7 @@
             </ul>
           </div>
           <div class="card__field" id="card-tabs-3">
-            <button type="button" class="btn">Оставить отзыв</button>
+            <button type="button" class="btn card__review-btn">Оставить отзыв</button>
             <form action="#" class="card__form">
               <label for="card-name" class="card__label">ФИО <span>*</span></label>
               <input type="text" name="card-name" id="card-name" class="card__input">
@@ -497,6 +497,35 @@
     </div>
   </div>
   
+  <div style="display: none;" id="click" class="modal modal--click">
+    <p class="modal__title">Купить в 1 клик</p>
+    <form action="#" class="modal__click">
+      <div class="modal__block">
+        <div class="modal__photo">
+          <p>Медицинский разделительный трансформатор ТР-63М</p>
+          <figure href="#" class="modal__img">
+            <img src="img/img-card.jpg" alt="Медицинский разделительный трансформатор" width="364" height="364">
+          </figure>
+          <p class="card__price">0 руб.</p>
+        </div>
+        <div class="modal__info">
+          <label for="name3" class="modal__label">Ваше имя<span>*</span></label>
+          <input type="text" name="name" id="name3" class="card__input" required>
+          <label for="phone3" class="modal__label">Контактный телефон<span>*</span></label>
+          <input type="tel" name="phone" id="phone3" class="card__input" required>
+          <label for="email" class="modal__label">E-mail</label>
+          <input type="email" name="email" id="email" class="card__input">
+          <label for="text" class="modal__label">Комментарий к заказу</label>
+          <textarea name="text" id="text" class="card__text"></textarea>
+          <button type="submit" class="btn modal__btn-click">Отправить заказ</button>
+          <p class="modal__comment"><span>*</span>-Обязательно для заполнения</p>
+        </div>
+      </div>
+      <input type="checkbox" name="check" id="check2" class="modal__checkbox" checked>
+      <label for="check2" class="modal__check">Я согласен(а) на <a href="#">обработку персональных данных</a></label>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/sidebar.js"></script>
@@ -523,6 +552,13 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
     });
+  </script>
+  
+  <!-- Review -->
+  <script>
+    $('.card__review-btn').click(function() {
+      $('.card__form').slideToggle();
+    })
   </script>
 </body>
 </html>

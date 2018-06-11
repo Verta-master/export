@@ -778,6 +778,16 @@ button {
 .modal--sign .modal__check {
   float: right;
 }
+.modal--click {
+  max-width: 600px;
+  padding: 20px 30px;
+}
+.modal--click .modal__title {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 25px;
+  color: #2e2e2e;
+}
 .modal .link {
   display: block;
   margin-bottom: 20px;
@@ -786,6 +796,17 @@ button {
 .modal .social {
   float: right;
   margin-top: -35px;
+}
+.modal__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .modal__wrap {
   display: -webkit-box;
@@ -877,6 +898,44 @@ button {
 }
 .modal__register .btn {
   margin-bottom: 20px;
+}
+.modal__photo {
+  width: 35%;
+}
+.modal__info {
+  width: 60%;
+  padding-left: 50px;
+  background-image: url(../img/pb_separator.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.modal__img {
+  margin-top: 25px;
+  width: 100%;
+  height: 218px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__img img {
+  display: block;
+  max-height: 100%;
+}
+.modal__comment {
+  font-size: 11px;
+  color: #575757;
+}
+.modal__comment span {
+  color: red;
+}
+.modal__btn-click {
+  width: 210px;
 }
 .btn {
   min-width: 115px;
@@ -2060,15 +2119,24 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 .card__slide img {
   display: block;
   max-height: 100%;
 }
+.card__slide:hover,
+.card__slide:active {
+  border-color: #0089e5;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
 .card__prev,
 .card__next {
   top: auto;
   bottom: 20px;
+  z-index: 1;
 }
 .card__brand {
   float: right;
@@ -2168,6 +2236,7 @@ button {
   width: 205px;
   height: 40px;
   margin-right: 10px;
+  color: #707070;
 }
 .card__basket {
   width: 170px;
@@ -2257,7 +2326,7 @@ button {
   border-bottom: 1px solid #e7e7e7;
 }
 .card__title .ui-tabs-active {
-  font-weight: 700;
+  color: #000;
 }
 .card__title .ui-tabs-active::after {
   display: block;
@@ -2265,6 +2334,8 @@ button {
 .card__name {
   padding: 7px 25px;
   position: relative;
+  font-weight: 700;
+  color: #7a7a7a;
 }
 .card__name::after {
   display: none;
@@ -2276,12 +2347,21 @@ button {
   height: 2px;
   background-color: #0089e5;
 }
+.card__name:hover,
+.card__name:active {
+  color: #000;
+}
+.card__name:hover::after,
+.card__name:active::after {
+  display: block;
+}
 .card__field {
   padding-top: 15px;
   padding-bottom: 50px;
   color: #8b8b8b;
 }
 .card__form {
+  display: none;
   margin-top: 15px;
 }
 .card__label {
