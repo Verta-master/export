@@ -148,6 +148,19 @@
   .sidebar__input {
     width: 77px;
   }
+  .card__gallery {
+    width: 300px;
+  }
+  .card__info {
+    width: 400px;
+  }
+  .card__btns,
+  .card__click,
+  .card__basket,
+  .card__compare,
+  .card__like {
+    margin-bottom: 10px;
+  }
 }
 
 //---------------------------------
@@ -269,6 +282,9 @@
     .sidebar__sublist {
       display: none;
     }
+  }
+  .card__list--half li {
+    width: 100%;
   }
 }
 
@@ -426,6 +442,53 @@
   .catalog--internal .catalog__item {
     margin-right: 0;
   }
+  .card__wrap {
+    display: block;
+  }
+  .card__info,
+  .card__gallery {
+    width: 100%;
+  }
+  .card__img {
+    height: 400px;
+  }
+  .card__slider {
+    width: 210px;
+  }
+  .card__buy {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .card__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__basket,
+  .card__btns,
+  .card__click {
+    margin-right: 0;
+  }
+  .modal__block {
+    display: block;
+  }
+  .modal__img {
+    display: none;
+  }
+  .modal__info {
+    width: 100%;
+    padding-left: 0;
+    background-image: none;
+  }
+  .modal__photo {
+    width: 100%;
+    
+    .card__price {
+      font-size: 17px;
+      text-align: center;
+    }
+  }
 }
 
 //--------------------------------
@@ -488,5 +551,8 @@
   }
   .brand__slide {
     width: 175px;
+  }
+  .card__title {
+    flex-direction: column;
   }
 }
